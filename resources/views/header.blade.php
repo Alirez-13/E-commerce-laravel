@@ -36,7 +36,7 @@ if (Session::has('user')){
                 <button type="submit" class="btn btn-default">Search</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Cart({{$total}})</a></li>
+                <li><a href="/cartlist">Cart({{$total}})</a></li>
                 @if(\Illuminate\Support\Facades\Session::has('user'))
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{\Illuminate\Support\Facades\Session::get('user')['name']}}
